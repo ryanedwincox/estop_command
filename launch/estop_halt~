@@ -1,0 +1,3 @@
+<launch>
+  <node name="estop_control_server" pkg="estop_control" type="estop_control" />
+</launch>

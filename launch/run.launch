@@ -1,0 +1,4 @@
+<launch>
+  <param name="msg" value="3" />
+  <node name="estop" pkg="estop_command" type="estop" />
+</launch>
