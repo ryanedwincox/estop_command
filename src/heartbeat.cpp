@@ -13,7 +13,6 @@ int main(int argc, char **argv)
     std_srvs::Empty srv;
 
     ros::Rate r(10); // 10Hz
-    ros::Rate q(1); // Hz
     while(ros::ok())
     {
         if (client.call(srv))
@@ -23,7 +22,6 @@ int main(int argc, char **argv)
         else
         {
         ROS_ERROR("dead");
-        q.sleep();
         }
         r.sleep();
     }

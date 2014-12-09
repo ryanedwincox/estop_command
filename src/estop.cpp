@@ -14,10 +14,9 @@ int main(int argc, char **argv)
     ros::NodeHandle n;
     ros::ServiceClient client = n.serviceClient<estop_command::estopSignal>("estop_control");
     estop_command::estopSignal srv;
-    ros::NodeHandle nh("~");
 
     int message = 1;
-    nh.getParam("msg", message);
+    n.getParam("/msg", message);
 
     ros::Rate r(1); // 1Hz
     while (ros::ok()) {
