@@ -1,4 +1,4 @@
 <launch>
-  <node name="estop" pkg="estop_command" type="estop" />
-  <arg name="msg" type="int" value="3" />
+  <node name="estop" pkg="estop_command" type="estop" ns="estop"/>
+  <param name="msg" type="int" value="3" />
 </launch>
