@@ -30,6 +30,7 @@ int main(int argc, char **argv)
             ROS_ERROR("Failed to call service estop_control");
             r.sleep();
         }
+        r.sleep();
     }
     client.shutdown();
     return 0;
